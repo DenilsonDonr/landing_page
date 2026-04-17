@@ -15,12 +15,15 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: var(--fuente-cuerpo);
   background-color: var(--color-fondo);
   color: var(--color-texto);
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .container {
@@ -68,6 +71,7 @@ body {
   justify-content: space-between;
   padding: 16px 40px;
   z-index: 1000;
+  box-sizing: border-box;
 }
 
 .nav-logo span {
@@ -131,5 +135,38 @@ body {
 
   .nav-links.abierto {
     display: flex;
+  }
+}
+
+/* HERO */
+
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #2C1810 0%, #4A2C2A 50%, #7a4030 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.hero-content h1 {
+  font-family: var(--fuente-titulo);
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: var(--color-acento);
+  margin-bottom: 32px;
+}
+
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 2rem;
   }
 }
