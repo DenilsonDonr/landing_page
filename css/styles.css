@@ -170,3 +170,57 @@ body {
     font-size: 2rem;
   }
 }
+
+/* NOSOTROS */
+
+.nosotros {
+  padding: 90px 0;
+  background-color: #fff;
+}
+
+.nosotros .container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.nosotros-img {
+  flex: 1;
+}
+
+.nosotros-img img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  object-fit: cover;
+  height: 380px;
+}
+
+.nosotros-texto {
+  flex: 1;
+}
+
+.nosotros-texto h2 {
+  font-family: var(--fuente-titulo);
+  font-size: 2rem;
+  color: var(--color-principal);
+  margin-bottom: 20px;
+}
+
+.nosotros-texto p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #5a4035;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .nosotros .container {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .nosotros-img img {
+    height: 260px;
+  }
+}
