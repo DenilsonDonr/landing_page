@@ -442,3 +442,71 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* CONTACTO */
+
+.contacto {
+  padding: 90px 0;
+  background-color: #fff;
+}
+
+.contacto h2 {
+  font-family: var(--fuente-titulo);
+  font-size: 2rem;
+  color: var(--color-principal);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+#contactoForm {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-grupo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-grupo label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-principal);
+  margin-bottom: 6px;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+  padding: 12px 16px;
+  border: 1px solid #d9cec9;
+  border-radius: 4px;
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.95rem;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-grupo input:focus,
+.form-grupo textarea:focus {
+  border-color: var(--color-acento);
+}
+
+.form-grupo textarea {
+  resize: vertical;
+}
+
+#contactoForm .btn {
+  width: 100%;
+  text-align: center;
+}
+
+#form-respuesta {
+  text-align: center;
+  margin-top: 16px;
+  font-weight: 700;
+  color: var(--color-principal);
+  min-height: 24px;
+}
