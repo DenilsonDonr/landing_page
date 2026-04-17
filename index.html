@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Aroma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span>☕ Café Aroma</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#video">Experiencia</a></li>
+      <li><a href="#testimonios">Opiniones</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- SECCIÓN 1: HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>El café que despierta tu día</h1>
+      <p>Granos seleccionados, sabor inigualable. Ven y vívelo.</p>
+      <a href="#menu" class="btn">Ver Menú</a>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 2: NOSOTROS -->
+  <section id="nosotros" class="nosotros">
+    <div class="container">
+      <div class="nosotros-img">
+        <img src="assets/images/nosotros.jpg" alt="Interior del café" />
+      </div>
+      <div class="nosotros-texto">
+        <h2>Nuestra Historia</h2>
+        <p>
+          Café Aroma nació en 2010 con una sola misión: llevar el mejor café
+          de altura a cada taza. Trabajamos directamente con agricultores locales
+          para garantizar frescura y calidad en cada sorbo.
+        </p>
+        <p>
+          Nuestro local es un espacio cálido donde el aroma del café recién
+          molido te da la bienvenida cada mañana.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 3: MENÚ -->
+  <section id="menu" class="menu">
+    <div class="container">
+      <h2>Nuestro Menú</h2>
+      <p class="subtitulo">Elaborados con los mejores granos del mundo</p>
+      <div class="menu-cards">
+        <div class="card">
+          <img src="assets/images/espresso.jpg" alt="Espresso" />
+          <h3>Espresso</h3>
+          <p>Intenso, concentrado y puro. La base de todo buen café.</p>
+          <span class="precio">S/ 5.00</span>
+        </div>
+        <div class="card">
+          <img src="assets/images/cappuccino.jpg" alt="Cappuccino" />
+          <h3>Cappuccino</h3>
+          <p>Espresso con leche cremosa y espuma suave perfectamente equilibrado.</p>
+          <span class="precio">S/ 8.00</span>
+        </div>
+        <div class="card">
+          <img src="assets/images/latte.jpg" alt="Latte" />
+          <h3>Latte Art</h3>
+          <p>Café con leche vaporizada y un toque de arte en cada taza.</p>
+          <span class="precio">S/ 9.00</span>
+        </div>
+        <div class="card">
+          <img src="assets/images/frio.jpg" alt="Café Frío" />
+          <h3>Cold Brew</h3>
+          <p>Preparado en frío por 12 horas. Suave y refrescante.</p>
+          <span class="precio">S/ 10.00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 4: GALERÍA -->
+  <section id="galeria" class="galeria">
+    <div class="container">
+      <h2>Galería</h2>
+      <p class="subtitulo">Momentos que inspiran</p>
+      <div class="galeria-grid">
+        <img src="assets/images/gal1.jpg" alt="Café en taza" />
+        <img src="assets/images/gal2.jpg" alt="Granos de café" />
+        <img src="assets/images/gal3.jpg" alt="Barista trabajando" />
+        <img src="assets/images/gal4.jpg" alt="Ambiente del café" />
+        <img src="assets/images/gal5.jpg" alt="Pastelería" />
+        <img src="assets/images/gal6.jpg" alt="Mesa y taza" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 5: VIDEO -->
+  <section id="video" class="video-seccion">
+    <div class="container">
+      <h2>Nuestra Experiencia</h2>
+      <p class="subtitulo">Descubre cómo preparamos cada taza con pasión</p>
+      <div class="video-wrapper">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ZgzIO5lNpMk"
+          title="Proceso de preparación de café"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 6: TESTIMONIOS -->
+  <section id="testimonios" class="testimonios">
+    <div class="container">
+      <h2>Lo que dicen nuestros clientes</h2>
+      <div class="testimonios-grid">
+        <div class="testimonio">
+          <p>"El mejor café que he probado en años. El latte art es simplemente hermoso y delicioso."</p>
+          <span>— María García</span>
+        </div>
+        <div class="testimonio">
+          <p>"Un ambiente acogedor y un café excepcional. Ya es mi lugar favorito para trabajar."</p>
+          <span>— Carlos Ruiz</span>
+        </div>
+        <div class="testimonio">
+          <p>"El cold brew es increíble. Lo recomiendo a todos mis amigos sin dudarlo."</p>
+          <span>— Ana Torres</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 7: CONTACTO -->
+  <section id="contacto" class="contacto">
+    <div class="container">
+      <h2>Contáctanos</h2>
+      <p class="subtitulo">¿Tienes alguna consulta? Escríbenos</p>
+      <form id="contactoForm">
+        <div class="form-grupo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" />
+        </div>
+        <div class="form-grupo">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tu@correo.com" />
+        </div>
+        <div class="form-grupo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar mensaje</button>
+        <p id="form-respuesta"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-logo">☕ Café Aroma</div>
+      <p>Av. Los Cafetos 123, Lima, Perú &nbsp;|&nbsp; +51 999 888 777</p>
+      <div class="redes">
+        <a href="#" aria-label="Facebook">
+          <img src="assets/images/facebook.svg" alt="Facebook" />
+        </a>
+        <a href="#" aria-label="Instagram">
+          <img src="assets/images/instagram.svg" alt="Instagram" />
+        </a>
+        <a href="#" aria-label="TikTok">
+          <img src="assets/images/tiktok.svg" alt="TikTok" />
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Café Aroma. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
